@@ -28,7 +28,7 @@ require([
     
     //Build a fake collection and add some models to it.  Fake "Activity Item" models
     collection = new Backbone.Collection([]);
-    for (i = 0 ; i < 25 ; i++)  {
+    for (i = 1 ; i < 25 ; i++)  {
         model = new Backbone.Model({
             name: "Greg Young",
             entry: "Decision Made for asset 'Gregs Asset " + i + ": Approved",
@@ -52,7 +52,7 @@ require([
             a.value = attributes[key];
             item.setAttributeNode(a);
         };
-        
+
         document.querySelector('.activity').appendChild(item) 
     }
 

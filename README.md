@@ -1,1 +1,2 @@
-# skyJS
+# Simple Activity Log Items App
+
