@@ -1,6 +1,7 @@
 /* global require: false */
 require([
-    "backbone"
+    "backbone",
+    "webcomponents"
 ], function (Backbone) {
     var tmpl = document.querySelector('template'),
         ActivityItemProto = Object.create(HTMLDivElement.prototype),

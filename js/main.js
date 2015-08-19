@@ -6,7 +6,7 @@ define('main', function () {
     appConfig = {
         "baseUrl": scriptBase,
         "paths": {
-            "backbone":  "backbone",
+            "backbone":  "backbone"
         }
     };
 
