@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Custom Elements</title>
+        <style>
+            body { font-family: arial, sans-serif; font-size: 14px; margin: 25px !important; }
+            h2 { padding-bottom: 10px;}
+        </style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+        <script data-main="js/main" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.20/require.js"></script>
+        
+        
+    </head>
+    <body> 
+        <template>
+            <style>
+                :host {
+                    display: block;
+                    width: 550px;
+                    padding: 20px 0px;
+                    border-bottom: 1px solid #cccccc;
+                }
+                .activityItem {
+                    
+                    display: block;
+                }
+                .userIcon {
+                    background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
+                    border-radius: 15px;
+                    display: inline-block;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+                    width: 30px;
+                    color: #ffffff;
+                    font-size: 10px;
+                }
+                .entry {
+                    clear: both;   
+                }
+                a {
+                    color: #147ec2;
+                    text-decoration: none;
+                }
+                .dateTime {
+                    display: block;
+                    font-size: 12px;
+                    font-style: italic;
+                    color: #cccccc;
+                    margin-left: 35px;
+                }
+            </style>
+            <div class="activityItem">
+                <span class="userIcon"></span>
+                <a id="name" href="#"></a>
+                <span id="entry"></span>
+                <span class="dateTime"></span>
+            </div>
+        </template>
+
+        <h2>Activity Log</h2>
+        <div class="activity"></div>
+    </body>
+</html>
